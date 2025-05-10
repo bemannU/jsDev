@@ -98,3 +98,14 @@
 //Math.sign(x); 
 //let max = Math.max(x, y, z); finds largest in a set of numbers
 //let min = Math.min(x, y, z); finds smallest in a set of numbers
+//Math.random() * 100; creates random real number between 1 and 100 (exclusive) (for inclusive you just + 1)
+//Math.floor(Math.random() * 100); same but without decimals
+
+const button1 = document.getElementById("button1");
+const label1 = document.getElementById("label1");
+let randomNum = 0;
+
+button1.onclick = function(){
+    randomNum = Math.round (Math.random() * 100) + 1; 
+    label1.textContent = randomNum;
+}
