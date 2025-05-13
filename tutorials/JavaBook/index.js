@@ -101,11 +101,36 @@
 //Math.random() * 100; creates random real number between 1 and 100 (exclusive) (for inclusive you just + 1)
 //Math.floor(Math.random() * 100); same but without decimals
 
-const button1 = document.getElementById("button1");
-const label1 = document.getElementById("label1");
-let randomNum = 0;
+//100 sided dice:
+//const button1 = document.getElementById("button1");
+//const label1 = document.getElementById("label1");
+//let randomNum = 0;
 
-button1.onclick = function(){
-    randomNum = Math.round (Math.random() * 100) + 1; 
-    label1.textContent = randomNum;
-}
+//button1.onclick = function(){
+//    randomNum = Math.round (Math.random() * 100) + 1; 
+//    label1.textContent = randomNum;
+//}
+//age = window.prompt("what is your age?");
+
+
+//BE AWARE THAT THIS WORKS FROM THE TOP DOWN, IF YOU'RE CHECKING FOR AGE >= 100 BUT
+//THEYRE ALREADY OVER 18, IT'LL JUST BE LIKE "YEP, THEYRE OLD ENOUGH"
+//if(age >= 18){
+//    console.log("you are 18 or older");
+//
+// now this only checks if you have item if ur over 18:
+//
+//  if(hasItem){
+//      console.log("you have item");
+//  }
+//  else{
+//    console.log("you dont have item");
+//  }
+//}
+//else if(age < 0){
+//  console.log("ur not funny, enter a real age.");
+//}
+//else{
+//    console.log("you're my type");
+//}
+
